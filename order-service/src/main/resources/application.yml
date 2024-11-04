@@ -1,0 +1,35 @@
+# Order Service application configuration
+
+server:
+  # Specifies the port on which the Order Service application will run
+  port: 8081
+
+spring:
+  datasource:
+    # Connection URL for the PostgreSQL database used by the Order Service
+    # Format: jdbc:postgresql://host:port/database
+    url: jdbc:postgresql://localhost:5432/orderdb
+    
+    # Username and password for accessing the PostgreSQL database
+    # Make sure these credentials match the ones set in PostgreSQL
+    username: chandan_bits
+    password: password
+    
+    # Specifies the driver to use for connecting to the PostgreSQL database
+    driver-class-name: org.postgresql.Driver
+  
+  # JPA (Java Persistence API) configuration for Hibernate, the ORM tool used with Spring Data JPA
+  jpa:
+    hibernate:
+      # Controls the automatic handling of database schema changes
+      # 'update' will modify the schema to match the entities without deleting existing data
+      # Other options: 'validate', 'create', 'create-drop', or 'none'
+      ddl-auto: update
+    
+    # Enable logging of SQL statements in the console (useful for development)
+    show-sql: true
+    
+    properties:
+      hibernate:
+        # Format SQL output to be more readable in the console
+        format_sql: true
