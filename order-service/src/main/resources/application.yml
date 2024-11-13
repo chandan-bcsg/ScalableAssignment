@@ -33,3 +33,16 @@ spring:
       hibernate:
         # Format SQL output to be more readable in the console
         format_sql: true
+
+# Enable System health and other Actuator endpoints for monitoring
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"   # Exposes all Actuator endpoints over HTTP
+
+info:
+  app:
+    name: "Order Service"
+    description: "Microservice for managing orders"
+    version: "1.0.0"

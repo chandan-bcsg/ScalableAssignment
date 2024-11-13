@@ -33,8 +33,7 @@ This project is a microservice-based architecture developed using **Java 17**, *
 
 ## Project Structure
 
-```bash
-your-project/
+ScalableAssignment/
 ├── user-service/
 │   ├── src/
 │   ├── pom.xml

@@ -46,6 +46,20 @@
             <scope>runtime</scope>
             <optional>true</optional>
         </dependency>
+        <!-- Jakarta Validation API for data validation -->
+	<dependency>
+	    <groupId>jakarta.validation</groupId>
+	    <artifactId>jakarta.validation-api</artifactId>
+	    <version>3.0.2</version>
+	</dependency>
+
+        <!-- Spring Boot Actuator for health checks and monitoring -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${spring-boot.version}</version>
+
+        </dependency>
 
         <!-- Spring Boot Test Starter for testing -->
         <dependency>

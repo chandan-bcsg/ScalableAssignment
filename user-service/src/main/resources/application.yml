@@ -4,6 +4,12 @@ server:
 spring:
   data:
     mongodb:
-      host: localhost # MongoDB host (localhost when running locally)
-      port: 27017     # MongoDB default port
-      database: userdb # Name of the database to use in MongoDB for this service
+      host: ${MONGODB_HOST:localhost}        # MongoDB host
+      port: ${MONGODB_PORT:27017}            # MongoDB port
+      database: ${MONGODB_DATABASE:userdb}   # MongoDB database
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info  # Enables health and info endpoints for monitoring
