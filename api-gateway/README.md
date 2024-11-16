@@ -20,16 +20,3 @@ The **API Gateway** is a critical component of the microservices-based e-commerc
 4. **Kubernetes (Optional)**: For deployment in a Kubernetes cluster.
 
 ---
-
-## Project Structure
-api-gateway/
-├── src/
-│   ├── main/
-│   │   ├── java/com/bits/assignment/apigateway/
-│   │   │   ├── ApiGatewayApplication.java  # Main application class
-│   │   │   └── config/
-│   │   │       └── GatewayConfig.java      # Gateway routing configurations
-│   ├── resources/
-│   │   ├── application.yml                 # Configuration file
-├── Dockerfile                              # Dockerfile for containerization
-├── pom.xml                                 # Maven project file
